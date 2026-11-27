@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f7ed">
+  <meta name="description" content="Des idées de fast-food gourmandes et abordables, avec repères nutritionnels et allergènes à vérifier.">
+  <title>Bon & Malin — le fast-food futé</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#accueil" aria-label="Bon et Malin, accueil"><span class="brand-mark">b<span>&</span>m</span><span>bon<span class="brand-dot">.</span>malin</span></a>
+    <nav aria-label="Navigation principale"><a href="#idees">Nos idées</a><a href="#guide">Le guide futé</a><a href="#apropos">À propos</a></nav>
+    <a class="header-cta" href="#idees">Trouver mon repas <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero" id="accueil">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-dot"></span> LE BON PLAN À CROQUER</div>
+        <h1>Bien manger.<br><span>Sans se ruiner.</span></h1>
+        <p>Les envies de fast-food, c’est encore meilleur quand le prix est doux et qu’on sait ce qu’il y a dedans.</p>
+        <div class="hero-actions"><a class="button button-dark" href="#idees">Voir les idées <span>↓</span></a><span class="hero-note"><span class="mini-spark">✳</span> Des repères, pas des promesses</span></div>
+        <div class="hero-stats"><div><strong>10 €</strong><small>ou moins, c’est possible</small></div><i></i><div><strong>À toi</strong><small>de choisir ce qui te convient</small></div></div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-photo" role="img" aria-label="Bol coloré de légumes frais, avocat et céréales"></div>
+        <div class="photo-tag"><span>✳</span> Le plaisir d’abord,<br>le choix en mieux.</div>
+        <div class="photo-caption"><span class="caption-dot"></span> DES IDÉES QUI ONT DU GOÛT</div>
+        <span class="hero-flower" aria-hidden="true">✳</span>
+      </div>
+    </section>
+
+    <section class="ticker" aria-label="Nos engagements"><div class="ticker-track"><span>PETIT PRIX</span><b>✳</b><span>GRAND PLAISIR</span><b>✳</b><span>CHOIX ÉCLAIRÉ</span><b>✳</b><span>PETIT PRIX</span><b>✳</b><span>GRAND PLAISIR</span><b>✳</b><span>CHOIX ÉCLAIRÉ</span><b>✳</b></div></section>
+
+    <section class="ideas section-wrap" id="idees">
+      <div class="section-heading"><div><div class="eyebrow"><span class="eyebrow-dot"></span> À TABLE, MALIN</div><h2>Les bonnes idées<br>du <em>moment.</em></h2></div><p>Des combos faciles à trouver, à composer ou à adapter. Les prix et infos varient selon les enseignes : vérifie toujours sur place.</p></div>
+      <div class="filters" aria-label="Filtres de repas"><div class="filter-pills"><button class="filter-pill active" data-filter="all">Tout voir <span>04</span></button><button class="filter-pill" data-filter="vegetarien">Végé</button><button class="filter-pill" data-filter="moins8">Moins de 8 €</button><button class="filter-pill" data-filter="sans-gluten">Option sans gluten*</button></div><label class="search-box"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Un petit creux ?" aria-label="Rechercher un repas"></label></div>
+      <div class="meal-grid" id="meal-grid" aria-live="polite"></div>
+      <p class="empty-state" id="empty-state" hidden>Aucune idée trouvée. Essaie un autre filtre ou mot-clé.</p>
+      <p class="filter-footnote">* « Sans gluten » n’est jamais garanti en restauration : risque de contamination croisée, renseigne-toi auprès de l’enseigne.</p>
+    </section>
+
+    <section class="guide" id="guide"><div class="guide-inner"><div class="guide-stamp" aria-hidden="true"><span>LE PETIT<br>GUIDE</span><b>✳</b></div><div class="guide-copy"><div class="eyebrow eyebrow-light"><span class="eyebrow-dot"></span> LE PETIT GUIDE FUTÉ</div><h2>Le meilleur choix,<br>c’est <em>celui qui te va.</em></h2><p>Un repas équilibré ne se résume pas à une lettre. Pense à varier, à ajouter un fruit ou des légumes quand tu en as envie, et surtout à te faire plaisir.</p><a href="#apropos" class="text-link">Nos repères en toute transparence <span>↗</span></a></div><div class="guide-cards"><div class="tip-card"><span class="tip-icon">€</span><div><strong>Fixe ton budget</strong><small>Un menu simple ou une petite portion peut suffire.</small></div></div><div class="tip-card"><span class="tip-icon tip-orange">＋</span><div><strong>Ajoute de la couleur</strong><small>Salade, crudités ou fruit : selon tes envies.</small></div></div><div class="tip-card"><span class="tip-icon tip-white">♡</span><div><strong>Vérifie les infos</strong><small>Recettes et allergènes changent, demande à l’équipe.</small></div></div></div></div></section>
+
+    <section class="about section-wrap" id="apropos"><div class="about-mark">À SAVOIR <span>✳</span></div><div class="about-content"><h2>La transparence<br>avant tout.</h2><div class="about-text"><p>Les prix affichés sont des estimations pour des exemples de repas, pas des tarifs garantis. Ils changent selon la ville, le restaurant et les promotions.</p><p>Les Nutri-Scores présentés sont des <strong>repères pédagogiques estimatifs</strong> pour les compositions suggérées — ils ne sont ni calculés ni validés par les enseignes. Le Nutri-Score officiel concerne les produits évalués selon sa méthode ; un plat de restaurant n’a pas forcément de score officiel.</p><p>Les allergènes listés sont des allergènes susceptibles d’être présents dans les ingrédients. Ils ne constituent pas une garantie : recettes, fournisseurs et contaminations croisées peuvent varier. En cas d’allergie, contacte directement le restaurant et consulte ses informations à jour.</p><div class="about-note"><span>✳</span> En cas d’allergie ou d’intolérance, la sécurité passe avant toute recommandation en ligne.</div></div></div></section>
+  </main>
+
+  <footer><a class="brand footer-brand" href="#accueil"><span class="brand-mark">b<span>&</span>m</span><span>bon<span class="brand-dot">.</span>malin</span></a><span>Du goût, du bon sens et des prix doux.</span><a href="#accueil">Retour en haut ↑</a></footer>
+</body>
+</html>
